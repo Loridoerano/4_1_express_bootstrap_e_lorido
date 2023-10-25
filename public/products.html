@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Products</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">E-Commerce</a>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto">
+              <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search products...">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-primary position-relative">
+              Cart
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                4
+                <span class="visually-hidden">cart</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="container mx-auto p-3 row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..\image\helmet1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LS2 FF320 EVO MARA FULL FACE HELMET</h5>
+              <p class="card-text">The LS2 FF320 Stream Evo Helmet is a technically advanced helmet with an aerodynamic and very resistant shell. It has UV resistant visor and polycarbonate screen, which prevents distortion of the image, which, along with its internal sun shield, optimizes visibility during any adventure, guaranteeing maximum safety.</p>
+            </div>
+            <div class="card-footer hstack gap-1">
+              <small class="text-body-secondary">Price:</small>
+              <span class="badge text-bg-dark">₱4,690.00</span>
+              <button type="button" class="btn btn-outline-success btn-sm ms-auto">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" 
+              style="--bs-btn-padding-y: .08rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.1rem;"
+              >♥</button>
+          </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..\image\helmet2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">LS2 FF800 II STORM POWER HELMET</h5>
+              <p class="card-text">The exterior shell design of the LS2 FF800 II Storm takes advantage of several aerodynamic principles to use wind energy in favor of the rider, both professional and amateur. The shape of the shell and ventilation ports helps maintain stability while riding and renewing the air inside the helmet efficiently. The shell comes in two shell sizes and weighs about 1280 ±50 grams on the small size helmet.</p>
+            </div>
+            <div class="card-footer hstack gap-1">
+                <small class="text-body-secondary">Price:</small>
+                <span class="badge text-bg-dark">₱ ₱5,990</span>
+                <button type="button" class="btn btn-outline-success btn-sm ms-auto">Add to cart</button>
+                <button type="button" class="btn btn-outline-primary btn-sm" 
+                style="--bs-btn-padding-y: .08rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.1rem;"
+                >♥</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..\image\helmet3_1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NOLAN N90-3 LANEWAY MODULAR HELMET"</h5>
+              <p class="card-text">This is Nolan's new entry-level flip-up helmet. It is characterized by a solid and compact design and its generous technical specifications. Double P/J homologation, ultrawide visor, VPS sunscreen (adjustable in various positions), AirBooster Technology upper ventilation system, exclusive double-action chin guard opening mechanism, double lever Microlock2 retention system with micrometric adjustment.</p>
+            </div>
+            <div class="card-footer hstack gap-1">
+              <small class="text-body-secondary">Price:</small>
+              <span class="badge text-bg-dark">₱ ₱19,990</span>
+              <button type="button" class="btn btn-outline-success btn-sm ms-auto">Add to cart</button>
+              <button type="button" class="btn btn-outline-primary btn-sm" 
+              style="--bs-btn-padding-y: .08rem; --bs-btn-padding-x: 1.5rem; --bs-btn-font-size: 1.1rem;"
+              >♥</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#productModal">Add Product</button>
+            <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add a product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-floating mb-3">
+                      <input class="form-control" id="floatingName" placeholder="Name">
+                      <label for="floatingName">Product Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <div class="input-group">
+                            <span class="input-group-text">Description</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <div>
+                        <label>Product Image</label>
+                        </div>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputGroupFile02">
+                            </div>
+                    </div>
+                  </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Add product</button>
+                    </div>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
